@@ -27,7 +27,7 @@ export default function About() {
               </h3>
 
               <p className="mt-2 text-sm">
-                Votre partenaire en maintenance industrielle.
+                Votre partenaire en maintenance industrielle
               </p>
 
             </div>
@@ -39,82 +39,156 @@ export default function About() {
           <div>
 
             <span className="inline-block bg-blue-100 text-[#0056A6] px-5 py-2 rounded-full font-semibold">
-
               À PROPOS
-
             </span>
 
             <h2 className="mt-6 text-4xl font-extrabold italic text-gray-900 leading-tight">
-
               Une expertise au service de vos installations industrielles
-
             </h2>
 
             <div className="w-24 h-1 bg-red-600 mt-5 rounded-full"></div>
 
             <p className="mt-8 text-gray-600 leading-8">
-
-              ARIME TECH est une entreprise spécialisée dans
-              le rebobinage de moteurs électriques,
-              l'électricité industrielle,
-              la maintenance industrielle,
-              les transformateurs,
-              les groupes électrogènes,
-              le froid & climatisation
-              ainsi que la vente de produits et consommables électriques.
-
+              ARIME TECH est une entreprise spécialisée dans le rebobinage de
+              moteurs électriques, l'électricité industrielle, la maintenance
+              industrielle, les transformateurs, les groupes électrogènes,
+              le froid & climatisation ainsi que la vente de produits et
+              consommables électriques.
             </p>
 
             <p className="mt-5 text-gray-600 leading-8">
-
-              Notre objectif est d'offrir des solutions fiables,
-              durables et adaptées aux besoins de nos clients,
-              en privilégiant la qualité du travail,
-              la réactivité et la satisfaction.
-
+              Notre objectif est d'offrir des solutions fiables, durables
+              et adaptées aux besoins de nos clients, en privilégiant
+              la qualité du travail, la réactivité et la satisfaction.
             </p>
 
-            {/* Valeurs */}
+            <p className="mt-8 font-bold text-gray-900">
+              Nos équipes interviennent quotidiennement dans des
+              environnements variés, notamment :
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-10 mt-4">
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Industries</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Usines de production</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Bâtiments & Entreprises</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Commerces & PME / PMI</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Administrations publiques</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Hôpitaux & Centres de santé</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Hôtels & Complexes touristiques</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Stations de pompage</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Carrières & Mines</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Infrastructures énergétiques</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Chambres froides</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span className="text-red-600 font-bold">✓</span>
+                <span>Installations portuaires</span>
+              </div>
+
+
+
+            </div>
+                        {/* Nos valeurs */}
 
             <div className="grid grid-cols-2 gap-5 mt-10">
 
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm">
+              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
 
-                <FaAward className="text-[#0056A6] text-3xl mb-3"/>
+                <FaAward className="text-[#0056A6] text-3xl mb-3" />
 
-                <h4 className="font-bold">
+                <h4 className="font-bold text-gray-900">
                   Qualité
                 </h4>
 
+                <p className="text-gray-600 text-sm mt-2">
+                  Des prestations réalisées selon les meilleures pratiques.
+                </p>
+
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm">
+              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
 
-                <FaBolt className="text-[#0056A6] text-3xl mb-3"/>
+                <FaBolt className="text-[#0056A6] text-3xl mb-3" />
 
-                <h4 className="font-bold">
+                <h4 className="font-bold text-gray-900">
                   Réactivité
                 </h4>
 
+                <p className="text-gray-600 text-sm mt-2">
+                  Une intervention rapide pour limiter les arrêts de production.
+                </p>
+
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm">
+              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
 
-                <FaHandshake className="text-[#0056A6] text-3xl mb-3"/>
+                <FaHandshake className="text-[#0056A6] text-3xl mb-3" />
 
-                <h4 className="font-bold">
+                <h4 className="font-bold text-gray-900">
                   Confiance
                 </h4>
 
+                <p className="text-gray-600 text-sm mt-2">
+                  Une relation durable fondée sur la transparence et le professionnalisme.
+                </p>
+
               </div>
 
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm">
+              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
 
-                <FaUsers className="text-[#0056A6] text-3xl mb-3"/>
+                <FaUsers className="text-[#0056A6] text-3xl mb-3" />
 
-                <h4 className="font-bold">
+                <h4 className="font-bold text-gray-900">
                   Satisfaction Client
                 </h4>
+
+                <p className="text-gray-600 text-sm mt-2">
+                  La satisfaction de nos clients est au cœur de chacune de nos interventions.
+                </p>
 
               </div>
 
@@ -125,6 +199,7 @@ export default function About() {
         </div>
 
       </div>
+
     </section>
   );
 }
