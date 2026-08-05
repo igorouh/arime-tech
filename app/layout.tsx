@@ -1,4 +1,6 @@
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "ARIME TECH",
@@ -13,6 +15,11 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>{children}</body>
+
+
+      <Footer />
+
+      
     </html>
   );
 }

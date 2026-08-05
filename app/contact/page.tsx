@@ -442,10 +442,10 @@ export default function ContactPage() {
           <div className="flex justify-center mt-10">
 
             <a
-            href="https://maps.app.goo.gl/chHQTyfT2Smhgtuz8"
+            href="https://www.google.com/maps/dir/?api=1&destination=6.37329385621582, 2.3546913978645523"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-all"
             >
               📍 Obtenir un itinéraire
               </a>
