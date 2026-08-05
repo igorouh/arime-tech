@@ -130,66 +130,6 @@ export default function About() {
               </div>
 
 
-
-            </div>
-                        {/* Nos valeurs */}
-
-            <div className="grid grid-cols-2 gap-5 mt-10">
-
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-
-                <FaAward className="text-[#0056A6] text-3xl mb-3" />
-
-                <h4 className="font-bold text-gray-900">
-                  Qualité
-                </h4>
-
-                <p className="text-gray-600 text-sm mt-2">
-                  Des prestations réalisées selon les meilleures pratiques.
-                </p>
-
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-
-                <FaBolt className="text-[#0056A6] text-3xl mb-3" />
-
-                <h4 className="font-bold text-gray-900">
-                  Réactivité
-                </h4>
-
-                <p className="text-gray-600 text-sm mt-2">
-                  Une intervention rapide pour limiter les arrêts de production.
-                </p>
-
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-
-                <FaHandshake className="text-[#0056A6] text-3xl mb-3" />
-
-                <h4 className="font-bold text-gray-900">
-                  Confiance
-                </h4>
-
-                <p className="text-gray-600 text-sm mt-2">
-                  Une relation durable fondée sur la transparence et le professionnalisme.
-                </p>
-
-              </div>
-
-              <div className="bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300">
-
-                <FaUsers className="text-[#0056A6] text-3xl mb-3" />
-
-                <h4 className="font-bold text-gray-900">
-                  Satisfaction Client
-                </h4>
-
-                <p className="text-gray-600 text-sm mt-2">
-                  La satisfaction de nos clients est au cœur de chacune de nos interventions.
-                </p>
-
               </div>
 
             </div>
@@ -198,7 +138,6 @@ export default function About() {
 
         </div>
 
-      </div>
 
     </section>
   );
