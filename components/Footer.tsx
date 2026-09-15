@@ -1,238 +1,362 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaWhatsapp,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+  ArrowRight,
+  MapPin,
+  Phone,
+  Mail,
+  MessageCircle,
+} from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#071A2B] text-white">
+    <footer className="bg-[#061522] text-white">
 
-      {/* PARTIE PRINCIPALE */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      {/* =====================================================
+          CTA INDUSTRIEL
+      ===================================================== */}
+      <section className="relative overflow-hidden border-b border-white/10">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        {/* Motif technique discret */}
+        <div className="absolute inset-0 opacity-[0.035] pointer-events-none">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #ffffff 1px, transparent 1px), linear-gradient(#ffffff 1px, transparent 1px)",
+              backgroundSize: "55px 55px",
+            }}
+          />
+        </div>
 
-          {/* ENTREPRISE */}
-          <div>
-            <h2 className="text-2xl font-bold tracking-wide">
+        {/* Accent graphique */}
+        <div className="absolute left-0 top-0 h-full w-1 bg-red-600" />
+
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-14 md:py-16">
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
+            <div className="max-w-2xl">
+
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-red-500"></span>
+
+                <span className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-300">
+                  Assistance technique
+                </span>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+                Vous avez un besoin technique ?
+              </h2>
+
+              <p className="mt-4 text-gray-400 text-base md:text-lg leading-7">
+                Parlons de votre projet industriel et trouvons ensemble
+                une solution adaptée à vos installations et équipements.
+              </p>
+
+            </div>
+
+            <Link
+              href="/contact"
+              className="group inline-flex items-center justify-center gap-3
+              bg-red-600 hover:bg-red-700
+              px-7 py-4
+              text-sm font-semibold uppercase tracking-wide
+              transition-all duration-300
+              shrink-0"
+            >
+              Demander un devis
+
+              <ArrowRight
+                size={18}
+                className="group-hover:translate-x-1 transition-transform duration-300"
+              />
+            </Link>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* =====================================================
+          FOOTER PRINCIPAL
+      ===================================================== */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 py-14">
+
+          {/* =================================================
+              IDENTITÉ
+          ================================================= */}
+          <div className="lg:col-span-6">
+
+            <Link href="/" className="inline-flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="ARIME TECH"
+                width={82}
+                height={82}
+                priority
+                className="object-contain"
+              />
+            </Link>
+
+            <h3 className="mt-5 text-2xl font-bold tracking-wide">
               ARIME <span className="text-red-500">TECH</span>
-            </h2>
+            </h3>
 
-            <div className="w-14 h-1 bg-red-500 rounded-full mt-4 mb-6"></div>
+            <div className="flex items-center gap-3 mt-4">
+              <span className="w-12 h-1 bg-red-500"></span>
+              <span className="w-5 h-1 bg-blue-500"></span>
+            </div>
 
-            <p className="text-gray-300 leading-7">
-              Des solutions durables pour vos installations et équipements.
+            <p className="mt-6 max-w-lg text-gray-400 leading-7">
+              Des solutions durables pour vos installations et équipements
+              industriels.
             </p>
 
-            <p className="text-gray-400 leading-7 mt-4">
-              Nous accompagnons les entreprises dans leurs besoins en
-              électricité industrielle, rebobinage, maintenance,
-              froid et climatisation.
+            <p className="mt-4 text-sm text-gray-500 max-w-lg leading-6">
+              Une expertise technique au service de la performance,
+              de la fiabilité et de la continuité de vos installations.
             </p>
+
           </div>
 
-          {/* NAVIGATION */}
-          <div>
-            <h3 className="text-lg font-bold">
-              Navigation
-            </h3>
 
-            <div className="w-10 h-1 bg-red-500 rounded-full mt-3 mb-6"></div>
+          {/* =================================================
+              ACCÈS RAPIDE
+          ================================================= */}
+          <div className="lg:col-span-3">
 
-            <ul className="space-y-4">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  Accueil
-                </Link>
-              </li>
+            <div className="flex items-center gap-3 mb-6">
 
-              <li>
-                <Link
-                  href="/#services"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  Nos services
-                </Link>
-              </li>
+              <span className="w-1 h-5 bg-red-500"></span>
 
-              <li>
-                <Link
-                  href="/#apropos"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  À propos
-                </Link>
-              </li>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
+                Accès rapide
+              </h3>
 
-              <li>
-                <Link
-                  href="/#realisations"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  Réalisations
-                </Link>
-              </li>
+            </div>
 
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-300 hover:text-white transition"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            <nav className="space-y-4">
+
+              <Link
+                href="/"
+                className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <ArrowRight
+                  size={14}
+                  className="text-red-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                />
+                Accueil
+              </Link>
+
+              <Link
+                href="/#apropos"
+                className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <ArrowRight
+                  size={14}
+                  className="text-red-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                />
+                À propos
+              </Link>
+
+              <Link
+                href="/#services"
+                className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <ArrowRight
+                  size={14}
+                  className="text-red-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                />
+                Services
+              </Link>
+
+              <Link
+                href="/#realisations"
+                className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <ArrowRight
+                  size={14}
+                  className="text-red-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                />
+                Réalisations
+              </Link>
+
+              <Link
+                href="/contact"
+                className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <ArrowRight
+                  size={14}
+                  className="text-red-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                />
+                Contact
+              </Link>
+
+            </nav>
+
           </div>
 
-          {/* SERVICES */}
-          <div>
-            <h3 className="text-lg font-bold">
-              Nos services
-            </h3>
 
-            <div className="w-10 h-1 bg-red-500 rounded-full mt-3 mb-6"></div>
+          {/* =================================================
+              CONTACT
+          ================================================= */}
+          <div className="lg:col-span-3">
 
-            <ul className="space-y-4 text-gray-300">
-              <li>Électricité industrielle</li>
-              <li>Rebobinage</li>
-              <li>Maintenance</li>
-              <li>Froid & climatisation</li>
-              <li>
-                Vente de produits et consommables électriques
-              </li>
-            </ul>
-          </div>
+            <div className="flex items-center gap-3 mb-6">
 
-          {/* CONTACT */}
-          <div>
-            <h3 className="text-lg font-bold">
-              Nous contacter
-            </h3>
+              <span className="w-1 h-5 bg-red-500"></span>
 
-            <div className="w-10 h-1 bg-red-500 rounded-full mt-3 mb-6"></div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
+                Contact
+              </h3>
+
+            </div>
+
 
             <div className="space-y-5">
 
-              {/* ADRESSE */}
+              {/* Adresse */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                  <FaMapMarkerAlt className="text-red-500" />
-                </div>
+
+                <MapPin
+                  size={19}
+                  className="text-red-500 mt-1 shrink-0"
+                />
 
                 <div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-xs uppercase tracking-wider text-gray-600">
                     Adresse
                   </p>
 
-                  <p className="text-gray-200 mt-1">
+                  <p className="mt-1 text-sm text-gray-300">
                     Agla Hlazounto
                     <br />
                     Cotonou, Bénin
                   </p>
                 </div>
+
               </div>
 
-              {/* TELEPHONE */}
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                  <FaPhoneAlt className="text-red-500" />
-                </div>
+
+              {/* Téléphone */}
+              <div className="flex items-start gap-4">
+
+                <Phone
+                  size={18}
+                  className="text-red-500 mt-1 shrink-0"
+                />
 
                 <div>
-                  <p className="text-sm text-gray-400">
+
+                  <p className="text-xs uppercase tracking-wider text-gray-600">
                     Téléphone
                   </p>
 
                   <a
                     href="tel:+2290129292959"
-                    className="text-gray-200 hover:text-white transition"
+                    className="mt-1 block text-sm text-gray-300 hover:text-white transition-colors"
                   >
                     +229 01 29 29 29 59
                   </a>
+
                 </div>
+
               </div>
 
-              {/* EMAIL */}
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                  <FaEnvelope className="text-red-500" />
-                </div>
 
-                <div>
-                  <p className="text-sm text-gray-400">
+              {/* Email */}
+              <div className="flex items-start gap-4">
+
+                <Mail
+                  size={18}
+                  className="text-red-500 mt-1 shrink-0"
+                />
+
+                <div className="min-w-0">
+
+                  <p className="text-xs uppercase tracking-wider text-gray-600">
                     Email
                   </p>
 
                   <a
                     href="mailto:contact@arime-tech.com"
-                    className="text-gray-200 hover:text-white transition break-all"
+                    className="mt-1 block text-sm text-gray-300 hover:text-white transition-colors break-all"
                   >
                     contact@arime-tech.com
                   </a>
+
                 </div>
+
               </div>
 
             </div>
+
           </div>
 
         </div>
-      </div>
 
-      {/* BARRE INFERIEURE */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6">
+
+        {/* =====================================================
+            LIGNE CONTACT / WHATSAPP
+        ===================================================== */}
+        <div className="border-t border-white/10 py-6">
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-5">
 
-            <p className="text-sm text-gray-400 text-center md:text-left">
-              © {new Date().getFullYear()} ARIME TECH. Tous droits réservés.
+            <p className="text-xs md:text-sm text-gray-500 text-center md:text-left">
+              Une question sur votre installation ? Notre équipe est à votre écoute.
             </p>
 
-            {/* RESEAUX SOCIAUX */}
-            <div className="flex items-center gap-3">
+            <a
+              href="https://wa.me/2290129292959"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            >
+              <MessageCircle
+                size={18}
+                className="text-green-500"
+              />
 
-              {/* FACEBOOK */}
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 flex items-center justify-center transition-all duration-300"
-              >
-                <FaFacebookF />
-              </a>
+              Échanger sur WhatsApp
 
-              {/* LINKEDIN */}
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-red-600 flex items-center justify-center transition-all duration-300"
-              >
-                <FaLinkedinIn />
-              </a>
+              <ArrowRight size={15} />
 
-              {/* WHATSAPP */}
-              <a
-                href="https://wa.me/2290129292959"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 flex items-center justify-center transition-all duration-300"
-              >
-                <FaWhatsapp />
-              </a>
-
-            </div>
+            </a>
 
           </div>
 
         </div>
+
+      </div>
+
+
+      {/* =====================================================
+          BARRE FINALE
+      ===================================================== */}
+      <div className="border-t border-white/10">
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5">
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+
+            <p className="text-xs text-gray-600 text-center md:text-left">
+              © {new Date().getFullYear()} ARIME TECH. Tous droits réservés.
+            </p>
+
+            <p className="text-xs text-gray-600 text-center">
+              Des solutions durables pour vos installations et équipements industriels.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
 
     </footer>
